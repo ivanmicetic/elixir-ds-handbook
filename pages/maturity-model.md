@@ -84,7 +84,3 @@ The RDM Maturity Model is structured into several domains, each representing a k
 
 - Version: {{ site.data.mm.version["Version number"] }} [{{ site.data.mm.version["Version description"] }}]
 - Release date: {{ site.data.mm.version["Timestamp"] }}
-
-## Tile navigation
-
-{% include section-navigation-tiles.html type="maturity-model" %}
