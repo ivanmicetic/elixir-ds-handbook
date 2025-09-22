@@ -1,4 +1,5 @@
-[![Jekyll site CI](https://github.com/elixir-europe/rdmkit/workflows/Jekyll%20site%20CI/badge.svg)](https://github.com/elixir-europe/rdmkit/actions?query=workflow%3A%22Jekyll+site+CI%22) [![theme badge](https://img.shields.io/badge/ELIXIR%20toolkit%20theme-jekyll-blue?color=0d6efd)](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme)
+[![Jekyll site CI](https://github.com/ivanmicetic/elixir-ds-handbook/actions/workflows/jekyll.yml/badge.svg?branch=main)](https://github.com/ivanmicetic/elixir-ds-handbook/actions/workflows/jekyll.yml)
+[![theme badge](https://img.shields.io/badge/Jekyll%20theme-ETT-blue?logo=jekyll&color=0d6efd)](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme)
 
 # ELIXIR Data Steward Handbook
 Welcome to the Data Steward Handbook, an ELIXIR Research Data Management (RDM) Community resource that offers practical guidance to data stewards on relevant topics in their daily job, encouraging the use of existing resources and best practices to improve local data management.
