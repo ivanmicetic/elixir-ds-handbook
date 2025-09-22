@@ -4,7 +4,7 @@ title: ELIXIR Data Steward Handbook
 description: ""
 # Metadata description of the website
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
+theme: elixir-toolkit-theme
 
 topnav_title: Data Steward Handbook
 
@@ -14,7 +14,12 @@ theme_variables:
 
 sass:
   style: compressed
-  sourcemap: never
+  sourcemap: always
+  silence_deprecations: # TODO: Fix https://sass-lang.com/documentation/js-api/interfaces/deprecations/
+    - import
+    - global-builtin
+    - color-functions
+    - mixed-decls
 
 gtag: 
 # Google analytics tag
@@ -25,6 +30,10 @@ gtag:
 
 exclude:
   - README.md
+  - Dockerfile
+  - vendor
+  - Gemfile
+  - Gemfile.lock
 
 defaults:
   -
@@ -100,6 +109,10 @@ defaults:
       type: mm-support
 
 plugins:
-  - jemoji
+  - elixir-toolkit-theme-plugins
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
+  - webrick
