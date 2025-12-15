@@ -1,26 +1,34 @@
 
 /*-----General styling-----*/
-$font-family-theme: "Lato", sans-serif;
+$font-family-theme: "Inter", sans-serif;
 
 /*-----Top navigation-----*/
-$topnav-bg: $light;
+$topnav-bg: $dark;
 $topnav-brand-height: 60px;
 
 /*-----More information tiles-----*/
-$info-card-header-bg: $dark-blue;
+$info-card-bg: $light;
+$info-card-color: $dark;
+$info-card-bg-hover: $primary;
+$info-card-color-hover: $white;
+
+/*-----Sidebar-----*/
+$sidebar-bg: $secondary-light;
+$sidebar-lvl2-bg: $secondary-light;
 
 /*-----Section navigation tiles-----*/
 $nav-card-bg: $light;
-$nav-card-header-bg: $light-x;
-$nav-card-header-color: $light;
-$nav-card-badge-color: $light;
-$nav-card-badge-bg: $light;
+$nav-card-header-bg: $dark;
+$nav-card-header-color: $secondary;
+$nav-card-badge-color: $accent-color;
+$nav-card-badge-bg: $dark;
 
 /*-----Footer-----*/
-$footer-bg: $dark-blue;
+$footer-bg: $primary;
 $footer-color: $white;
 $footer-link-color: $white;
+$footer-link-color-hover: $secondary;
 $footer-copyright-bg: #00000033;
 
 /*-----Events & news-----*/
-$news-border-color: $dark-blue;
+$news-border-color: $primary;

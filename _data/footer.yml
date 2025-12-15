@@ -1,18 +1,34 @@
-copyright:
-
+copyright: '[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) Data Stewardship Handbook by [ELIXIR](https://elixir-europe.org/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted.'
 columns:
-  - type: image
-    image_width: 120px
-    width: 1
-    src: 'assets/img/main_logo_negative.svg'
-    alt: ELIXIR Europe logo
+  - type: text
+    width: 6
+    content: |
+      Finding patterns.\
+      Sharing lessons. \
+      Building good practice together.
   - type: links
-    width: 11
+    width: 2
+    title: DISCOVER
     children: 
-      - url_text: About
+      - url_text: About the handbook
         url: /about
-        external_url: 
-      - url_text: Accessibility
+      - url_text: About the Maturity Model
+        url: /about
+      - url_text: Find our guidance signpots
+        url: /guidance
+      - url_text: Sit by the campfire and learn what works
+        url: /case-studies
+      - url_text: Use our waypoints to benchmark your work
+        url: /maturity-model
+  - type: links
+    width: 2
+    title: JOIN IN 
+    children: 
+      - url_text: Find out how to contribute
+        url: /about
+      - url_text: See the group of people you would join
+        url: /contributors
+      - url_text: Our accessibility committment
         url: /accessibility
-        external_url: 
+
 

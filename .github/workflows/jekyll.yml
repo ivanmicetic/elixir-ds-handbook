@@ -2,13 +2,15 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
   workflow_dispatch:
+  repository_dispatch:
+    types: [ update-data ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,7 +21,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          submodules: recursive
+          fetch-depth: 0
           ref: ${{ github.event.inputs.branch }}
+
+      - name: Update submodule to latest main
+        run: |
+          git submodule update --init --remote --merge
+          git status
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.204.0
@@ -64,7 +73,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
