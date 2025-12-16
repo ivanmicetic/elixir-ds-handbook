@@ -5,9 +5,15 @@ contributors: [Ingeborg Winge, Brane Leskošek, Nils-Christian Lübke, Vassilios
 page_id: mm-strategy-personnel
 ---
 
+{% assign indicator =
+site.data.shared.maturity_model.indicators
+| where: "indicatorId", page.page_id
+| first
+%}
+
 This indicator examines how responsibilities for research data management are distributed and supported within an organisation. It considers the presence, roles and coordination of staff who provide RDM expertise and guidance. Maturity reflects a progression from informal, individual efforts to structured and well-coordinated teams that ensure continuity, quality and long-term sustainability of RDM services.
 
-## Level 1 – No staff has explicit DM duties
+## Level 1 – No staff has explicit DM duties [{{ indicator.maturityLevels[0] }}]
 
 * **Unassigned responsibilities**: RDM responsibilities are not formally defined, assigned or recognised within the organisation.  
 * **Reactive**: RDM tasks are carried out when the occasion arises, without structure, procedures or clear accountability.  
